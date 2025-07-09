@@ -1,0 +1,19 @@
+package com.prasoon.library.user_service.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
+import lombok.Data;
+
+@Entity
+@Data
+public class User {
+
+    @Id
+    @NotNull
+    private String name;
+
+    @NotNull
+    private String email;
+
+}
